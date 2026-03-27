@@ -47,7 +47,7 @@ export default function App() {
   };
 
   const googleCalendarUrl = "https://www.google.com/calendar/render?action=TEMPLATE&text=Halal+Bihalal+Store+Ops+%26+Dev&details=Silaturahmi+Keluarga+Besar+Store+Operational+%26+Store+Development&location=Panderman+Resto+by+El+Hotel+Malang&dates=20260412T040000Z%2F20260412T070000Z";
-  const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Panderman+Resto+by+El+Hotel+Malang";
+  const googleMapsUrl = "https://maps.app.goo.gl/67yNghttK9biCvkH8";
 
   // Provided location image
   const locationPhoto = "https://pix8.agoda.net/hotelImages/536337/-1/d0b4cde4d60b729ac360b641a202d7d2.jpg?ce=0&s=1024x";
