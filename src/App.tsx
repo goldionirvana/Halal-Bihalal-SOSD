@@ -87,6 +87,8 @@ export default function App() {
 
   // Provided location image
   const locationPhoto = "https://pix8.agoda.net/hotelImages/536337/-1/d0b4cde4d60b729ac360b641a202d7d2.jpg?ce=0&s=1024x";
+  const hotelPhoto2 = "https://assets.el-hotels.com/elhotel/2e211043-62d0-4a82-b215-fc72cad4702a.jpeg?tr=w-1200,h-900,q-100";
+  const hotelPhoto3 = "https://assets.el-hotels.com/elhotel/12247907-b69f-4b26-846d-71cba028a348.jpeg?tr=w-1200,h-900,q-100";
 
   return (
     <div className="min-h-screen bg-idul-paper text-idul-ink font-sans selection:bg-idul-green/20 overflow-x-hidden">
@@ -216,21 +218,50 @@ export default function App() {
                 <div className="h-1 w-12 bg-idul-yellow mt-2 rounded-full" />
               </div>
               
-              <motion.div 
-                whileHover={{ scale: 1.01 }}
-                className="relative aspect-[16/9] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white group"
-              >
-                <img 
-                  src={locationPhoto} 
-                  alt="Panderman Resto El Hotel Malang"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-idul-brown/60 via-transparent to-transparent opacity-80" />
-                <div className="absolute bottom-8 left-10 text-white">
-                  <p className="font-serif italic text-2xl drop-shadow-md">Panderman Resto by El Hotel Malang</p>
-                </div>
-              </motion.div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <motion.div 
+                  whileHover={{ scale: 1.01 }}
+                  className="relative aspect-[16/9] md:aspect-auto md:row-span-2 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white group"
+                >
+                  <img 
+                    src={locationPhoto} 
+                    alt="Panderman Resto El Hotel Malang"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-idul-brown/60 via-transparent to-transparent opacity-80" />
+                  <div className="absolute bottom-8 left-10 text-white">
+                    <p className="font-serif italic text-2xl drop-shadow-md">Panderman Resto</p>
+                  </div>
+                </motion.div>
+
+                <motion.div 
+                  whileHover={{ scale: 1.02 }}
+                  className="relative aspect-[16/9] rounded-[2.5rem] overflow-hidden shadow-xl border-4 border-white group"
+                >
+                  <img 
+                    src={hotelPhoto2} 
+                    alt="El Hotel Malang View 1"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    referrerPolicy="no-referrer"
+                  />
+                </motion.div>
+
+                <motion.div 
+                  whileHover={{ scale: 1.02 }}
+                  className="relative aspect-[16/9] rounded-[2.5rem] overflow-hidden shadow-xl border-4 border-white group"
+                >
+                  <img 
+                    src={hotelPhoto3} 
+                    alt="El Hotel Malang View 2"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    referrerPolicy="no-referrer"
+                  />
+                </motion.div>
+              </div>
+              <div className="mt-8 text-center">
+                <p className="text-idul-brown/60 font-serif italic text-xl">by El Hotel Malang</p>
+              </div>
             </motion.section>
 
             {/* Event Details Card */}
@@ -310,6 +341,52 @@ export default function App() {
                 <p className="text-idul-brown/80 leading-relaxed font-serif italic text-2xl md:text-3xl">
                   "Taqabbalallahu minna wa minkum. Semoga Allah menerima amal ibadah kami dan kamu semua."
                 </p>
+              </div>
+            </motion.section>
+
+            {/* Dress Code Section */}
+            <motion.section 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8 }}
+              className="mb-32"
+            >
+              <div className="flex flex-col items-center mb-10">
+                <div className="p-4 rounded-full bg-idul-tan/10 mb-4">
+                  <img 
+                    src="https://cdn-icons-png.flaticon.com/512/3062/3062181.png" 
+                    className="w-8 h-8 opacity-60" 
+                    alt="Dress Code Icon"
+                  />
+                </div>
+                <h2 className="text-4xl font-serif font-bold text-idul-brown">Dress Code</h2>
+                <p className="text-idul-tan font-serif italic text-xl mt-2">Tema: Es Teh (Earth Tones)</p>
+                <div className="h-1 w-12 bg-idul-yellow mt-4 rounded-full" />
+              </div>
+
+              <div className="bg-white rounded-[3.5rem] p-6 md:p-10 shadow-2xl border border-idul-green/5 relative overflow-hidden">
+                <div className="relative aspect-[4/3] md:aspect-[16/9] rounded-[2.5rem] overflow-hidden mb-8 shadow-inner group">
+                  <img 
+                    src="https://image.popbela.com/post/20250514/upload_d25a54a970bc9020af62b428221c4395.png" 
+                    alt="Dress Code Reference - Earth Tones"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-idul-brown/40 to-transparent" />
+                </div>
+                
+                <div className="text-center px-4">
+                  <p className="text-idul-brown/70 leading-relaxed max-w-lg mx-auto font-light text-lg">
+                    Gunakan pakaian dengan nuansa warna <span className="font-bold text-idul-brown">Earth Tones</span> (Cokelat, Tan, Krem, Beige) terinspirasi dari segarnya Es Teh.
+                  </p>
+                  <div className="flex justify-center gap-3 mt-8">
+                    <div className="w-8 h-8 rounded-full bg-[#4B3621] shadow-sm" title="Dark Tea" />
+                    <div className="w-8 h-8 rounded-full bg-[#8B5E3C] shadow-sm" title="Medium Tea" />
+                    <div className="w-8 h-8 rounded-full bg-[#C2B280] shadow-sm" title="Milk Tea" />
+                    <div className="w-8 h-8 rounded-full bg-[#F5F5DC] shadow-sm" title="Ice Cube" />
+                  </div>
+                </div>
               </div>
             </motion.section>
 
