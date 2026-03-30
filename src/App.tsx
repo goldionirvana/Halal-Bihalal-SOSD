@@ -82,7 +82,7 @@ export default function App() {
     }
   };
 
-  const googleCalendarUrl = "https://www.google.com/calendar/render?action=TEMPLATE&text=Halal+Bihalal+Store+Ops+%26+Dev&details=Silaturahmi+Keluarga+Besar+Store+Operational+%26+Store+Development&location=Panderman+Resto+by+El+Hotel+Malang&dates=20260412T040000Z%2F20260412T070000Z";
+  const googleCalendarUrl = "https://www.google.com/calendar/render?action=TEMPLATE&text=Halal+Bihalal+Store+Ops+%26+Dev&details=Silaturahmi+Keluarga+Besar+Store+Operational+%26+Store+Development&location=Panderman+Resto+by+El+Hotel+Malang&dates=20260412T033000Z%2F20260412T070000Z";
   const googleMapsUrl = "https://maps.app.goo.gl/67yNghttK9biCvkH8";
 
   // Provided location image
@@ -322,7 +322,7 @@ export default function App() {
                     </div>
                     <div>
                       <h3 className="text-xs font-bold text-idul-brown/40 uppercase tracking-[0.4em] mb-4">Waktu Acara</h3>
-                      <p className="text-2xl font-serif font-bold text-idul-brown">11.00 WIB – Selesai</p>
+                      <p className="text-2xl font-serif font-bold text-idul-brown">10.30 WIB – Selesai</p>
                       <p className="text-sm text-idul-brown/50 mt-2 italic">Diharapkan hadir tepat waktu</p>
                     </div>
                   </div>
